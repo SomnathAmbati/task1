@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Space Between Characters</title>
+  <script>
+    function deleteSpace() {
+      var inputText = document.getElementById('inputText').value;
+      var modifiedText = inputText.split(' ').join('').replace(/\s/g, '');
+      document.getElementById('outputText').textContent = modifiedText;
+    }
+  </script>
+</head>
+<body>
+  <h1>Delete Space Between Characters</h1>
+  <input type="text" id="inputText" placeholder="Enter text with spaces">
+  <button onclick="deleteSpace()">Delete Space</button>
+  <p id="outputText"></p>
+</body>
+</html>
